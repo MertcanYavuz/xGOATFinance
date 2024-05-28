@@ -1,0 +1,327 @@
+/* Token Sale yazısı */
+.mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 50px; /* Soldan ve sağdan 50 piksel ötele */
+}
+
+.mainContentt {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-120px); /* Yukarıya doğru 100 piksel öteler */
+  color: #fff;
+  margin-left: 100px; /* Soldan 100 piksel ötele */
+}
+
+/*  */
+.inputGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  border-color: #555555; /* odağa geldiğinde kenarlık rengini değiştir */
+  width: 90%; /* input kutusunun genişliği */
+  box-sizing: border-box; /* padding'i genişliğe dahil et */
+  border: 2px solid #e0e0e0; /* beyaz kenarlık */
+  border-radius: 25px; /* köşeleri yuvarlak */
+  background-color: #e0e0e0; /* arka plan rengi */
+  color: black; /* yazı rengi */
+  font-size: 16px; /* yazı boyutu */
+  outline: none; /* odağa geldiğinde çerçeveyi kaldır */
+}
+
+.styled-input {
+  width: 90%;
+  padding: 10px 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #e94560;
+  color: e0e0e0;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px; /* Yukarı ve aşağı 10 piksel boşluk bırak */
+}
+
+.button:hover {
+  background-color: #d1345b;
+}
+
+.progressContainer {
+  position: relative;
+  border: 2px solid white;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px; /* Yukarı ve aşağı 10 piksel boşluk bırak */
+}
+
+.progressBar {
+  height: 40px;
+  background-color: #e94560;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.progressLabel {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #fff;
+}
+
+.detailColumn {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #e0e0e0;
+}
+
+.inputDiv p:first-child {
+  color: #007BFF;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 50px; /* Soldan ve sağdan 50 piksel ötele */
+}
+
+.inputDiv p {
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  margin: 0 50px; /* Soldan ve sağdan 50 piksel ötele */
+}
+
+.tokenSaleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0%);
+  color: white;
+  padding: 20px;
+}
+
+.detailsContainer {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  transform: translateY(0%);
+}
+
+
+/*
+
+.mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px; /* Soldan 50 piksel ötele /
+  margin-right: 50px; /* Sağdan 50 piksel ötele /
+}
+.mainContentt {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+  transform: translateY(-120px); /* Yukarıya doğru 100 piksel öteler /
+  color: #fff;
+  margin-left: 100px; /* Soldan 50 piksel ötele /
+  margin-right: 0px; /* Sağdan 50 piksel ötele /
+}
+
+
+
+.inputGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+}
+/* Enter USDT amount 
+.input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  border-color: #555555; /* odağa geldiğinde kenarlık rengini değiştir 
+  width: 90%; /* input kutusunun genişliği 
+  padding: 10px 20px; /* iç boşluk 
+  box-sizing: border-box; /* padding'i genişliğe dahil et 
+  border: 2px solid #e0e0e0; /* beyaz kenarlık 
+  border-radius: 25px; /* köşeleri yuvarlak 
+  background-color: #e0e0e0; /* arka plan rengi 
+  color: black; /* yazı rengi 
+  font-size: 16px; /* yazı boyutu 
+  outline: none; /* odağa geldiğinde çerçeveyi kaldır 
+}
+
+
+.styled-input {
+  width: 90%; /* input kutusunun genişliği 
+  padding: 10px 20px; /* iç boşluk 
+  margin: 10px; /* çevresindeki boşluk 
+  box-sizing: border-box; /* padding'i genişliğe dahil et 
+  border: 2px solid #ffffff; /* beyaz kenarlık 
+  border-radius: 25px; /* köşeleri yuvarlak 
+  background-color: #333333; /* arka plan rengi 
+  color: #ffffff; /* yazı rengi 
+  font-size: 16px; /* yazı boyutu 
+  outline: none; /* odağa geldiğinde çerçeveyi kaldır 
+}
+
+
+/* Connect your wallet buton ayarı 
+.button {
+  padding: 10px 20px;
+  background-color: #e94560;
+  color: e0e0e0;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  margin-left: 40px; /* Soldan 50 piksel ötele 
+  margin-right: 50px; /* Sağdan 50 piksel ötele 
+}
+
+
+.button:hover {
+  background-color: #d1345b;
+}
+/* percentage kısmı 
+.progressContainer {
+  position: relative;
+  width: 100%; /* Yüzde olarak tam genişlik  % kısım 
+  height: 40px;
+  background-color: #;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  margin-left: 40px; /* Soldan 50 piksel ötele 
+  margin-right: 50px; /* Sağdan 50 piksel ötele 
+}
+
+/* İlerleme Çubuğu ?? 
+.progressBar {
+  height: 40px; /* Yüksekliği ayarladım 
+  background-color: #e94560;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+
+/* İlerleme Etiketi 
+.progressLabel {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #fff; /* Etiketin rengi 
+}
+.detailColumn {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #e0e0e0;
+  
+}
+
+/* İlk paragrafı vurgulamak için 
+.inputDiv p:first-child {
+  color: #007BFF; /* Mavi renk 
+  font-size: 16px; /* Yazı boyutu 
+  font-weight: bold; /* Kalın yazı 
+  transform: translateY(50%);
+  align-items: center;
+  margin-left: 40px; /* Soldan 50 piksel ötele 
+  margin-right: 50px; /* Sağdan 50 piksel ötele 
+}
+/* Paragraf stilini belirler 
+.inputDiv p {
+  font-family: Arial, sans-serif; /* Yazı tipi 
+  color: #e0e0e0; /* Yazı rengi 
+  line-height: 1.6; /* Satır aralığı 
+  margin-bottom: 14px; /* Alt marj 
+  transform: translateY(50%);
+  margin-left: 40px; /* Soldan 50 piksel ötele 
+  margin-right: 0px; /* Sağdan 50 piksel ötele 
+}
+
+.tokenSaleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0%);
+  color: white;
+  padding: 20px;
+}
+
+.detailsContainer {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  transform: translateY(0%);
+}
+
+
+
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-10%);
+}
+
+.input, .button {
+  margin-top: 14px;
+  transform: translateY(-15%);
+}
+
+.progressContainer {
+  margin-top: 10px;
+  border: 2px solid white; /* Beyaz çerçeve ekleniyor 
+  border-radius: 25px; /* Çerçevenin köşeleri yuvarlatılıyor yüzdelik bar alt ust  
+  transform: translateY(-10%);
+}
+
+.progressLabel {
+  position: absolute;
+  color: white;
+}
+
+
+
+*/

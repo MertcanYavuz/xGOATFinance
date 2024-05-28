@@ -1,0 +1,87 @@
+.roadmapContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent; /* Koyu arka plan rengi */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 90px 0; /* Üst ve alt boşluk */
+}
+
+.roadmapStep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.roadmapStep::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #3b82f6; /* Çizgi rengi */
+  z-index: -1; /* Çizgiyi arka plana yerleştir */
+}
+
+.roadmapContent {
+  background-color: transparent; /* Kutu rengi */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(254, 254, 254, 0.2); /* Kutu gölgesi */
+}
+
+.roadmapContent h2 {
+  font-size: 36px;
+  margin: 0 0 10px; /* Alt boşluk */
+  color: white; /* Başlık rengi */
+}
+
+.roadmapContent p {
+  margin: 10px 0;
+  color: white; /* Metin rengi */
+}
+
+.roadmapDate {
+  font-weight: bold;
+  color: white; /* Tarih rengi */
+  background-color: #333; /* Arka plan rengi */
+  padding: 5px 10px; /* İçerik ile kenarlık arasındaki boşluk */
+  border-radius: 5px; /* Köşelerin yuvarlaklığı */
+  transition: background-color 0.3s; /* Arka plan rengindeki değişimin süresi ve pürüzsüzlüğü */
+}
+
+.roadmapDate:hover {
+  background-color: #555; /* Üzerine gelindiğinde arka plan rengi */
+}
+
+
+
+@media (max-width: 768px) {
+  .roadmapContainer {
+    padding: 20px 0;
+  }
+
+  .roadmapContent {
+    width: 90%;
+  }
+
+  .roadmapStep::before {
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    width: auto;
+  }
+}
+.pageTitle {
+  font-weight: bold;
+  color: white; /* başlık rengi */
+}
