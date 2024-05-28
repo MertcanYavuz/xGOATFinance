@@ -47,7 +47,7 @@ const Index = ({ address, setAddress, connectWallet, transferNativeToken }) => {
       <RoadMap />
       <Client />
       <Robot />
-      <ClaimVesting />
+      
       <MobileApp />
       <TeamMember />
       <Contact />
