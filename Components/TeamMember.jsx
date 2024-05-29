@@ -82,10 +82,16 @@ const TeamMember = ({ name, title, src, linkedinUrl, email, twitterUrl }) => {
 const TeamMembers = () => {
   return (
     <>
-      <h2 style={{ textAlign: 'center',marginBottom: '100px', color: 'white' }}>Our Team</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '100px', color: 'white' }}>Our Team</h2>
       <div
         id={'team'}
-        style={{ display: 'flex', flexWrap: 'wrap', padding: '16px', marginLeft: '92px' }}
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          padding: '16px',
+          marginLeft: '92px',
+          justifyContent: 'center', // Mobil cihazlarda merkezi hizalama
+        }}
       >
         <TeamMember
           name="Buğra ÇÖMEZ"
@@ -134,12 +140,20 @@ const TeamMembers = () => {
           linkedinUrl="https://www.linkedin.com/in/jane-doe"
           email="jane.doe@example.com"
           twitterUrl="https://twitter.com/example"
-        />
-        {/* Diğer TeamMember öğelerini buraya ekleyebilirsiniz */}
-      </div>
-    </>
-  );
-};
+          />
+          {/* Diğer TeamMember öğelerini buraya ekleyebilirsiniz */}
+        </div>
+        
+        <style jsx>{`
+          @media (max-width: 768px) {
+            #team {
+              flex-direction: column; // Ekran genişliği 768px'den küçükse alt alta sırala
+            }
+          }
+        `}</style>
+      </>
+    );
+  };
 
 export default TeamMembers;
 
