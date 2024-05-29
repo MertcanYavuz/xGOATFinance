@@ -1,5 +1,6 @@
 import React from "react";
 import { BiMenu } from "react-icons/bi";
+import styles from '../styles/Header.module.css';
 
 const Header = ({ address, setAddress, connectWallet }) => {
   const menuList = [
@@ -92,6 +93,7 @@ const Header = ({ address, setAddress, connectWallet }) => {
 };
 
 export default Header;
+
 
 
 /*

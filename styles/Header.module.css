@@ -1,0 +1,86 @@
+/* Genel stil */
+.header_wrap {
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header_wrap.lightBackground {
+    background-color: #ffffff;
+  }
+  
+  .header_wrap.darkBackground {
+    background-color: #000000;
+  }
+  
+  .container-fluid {
+    padding: 0 15px;
+  }
+  
+  .navbar {
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand .logo_light,
+  .navbar-brand .logo_dark {
+    height: 40px;
+  }
+  
+  .navbar-brand .logo_dark {
+    display: none;
+  }
+  
+  /* Ekran genişliği 992px ve üzeri için */
+  @media (min-width: 992px) {
+    .navbar-brand .logo_light {
+      display: block;
+    }
+    .navbar-brand .logo_dark {
+      display: none;
+    }
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 15px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Karanlık mod */
+  .header_wrap.darkBackground .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  
+  .header_wrap.darkBackground .navbar-toggler {
+    color: #ffffff;
+  }
+  
+  .header_wrap.darkBackground .logo_light {
+    display: none;
+  }
+  
+  .header_wrap.darkBackground .logo_dark {
+    display: block;
+  }
+  

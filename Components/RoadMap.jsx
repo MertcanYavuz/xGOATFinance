@@ -8,7 +8,7 @@ const Roadmap = () => {
       <p></p>
       <div className={styles.roadmapStep}>
         <div className={styles.roadmapContent}>
-          <h2>1</h2>
+        
           <p>Building Social Media Account</p>
           <p>New Website Launch</p>
           <p>Create Goat Coin</p>
@@ -19,7 +19,7 @@ const Roadmap = () => {
       </div>
       <div className={styles.roadmapStep}>
         <div className={styles.roadmapContent}>
-          <h2>2</h2>
+         
           <p>Listing on Coingecko and Coinmarketcap</p>
           <p>DEX Listing, CEX Listing</p>
           <p>Great Community Building</p>
@@ -29,7 +29,7 @@ const Roadmap = () => {
       </div>
       <div className={styles.roadmapStep}>
         <div className={styles.roadmapContent}>
-          <h2>3</h2>
+        
           <p>Creation of AI-powered Algorithmic Trading bots</p>
           <p>Creation of Prospectors Staking program</p>
           <p>Trading Competitions</p>
@@ -38,7 +38,7 @@ const Roadmap = () => {
       </div>
       <div className={styles.roadmapStep}>
         <div className={styles.roadmapContent}>
-          <h2>4</h2>
+        
           <p>Creating The Great Prospector Portfolio</p>
           <p>Establishment of GOAT Foundation</p>
           <p>Establishing Representatives around the world</p>
