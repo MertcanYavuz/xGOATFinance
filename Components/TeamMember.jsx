@@ -99,22 +99,22 @@ const TeamMembers = () => {
           src="./assets/images/team-lg-5.png"
           linkedinUrl="https://www.linkedin.com/in/jane-doe"
           email="jane.doe@example.com"
-          twitterUrl="https://twitter.com/example"
+          twitterUrl="https://x.com/BugraComez"
         />
         <TeamMember
-          name="GOAT"
+          name="Ahmet Sadik GULLU"
           title="CEO"
           src="./assets/images/team-lg-9.png"
           linkedinUrl="https://www.linkedin.com/in/jane-doe"
-          email="jane.doe@example.com"
-          twitterUrl=""
+          email="ahmetsgullu@goatfinance.net"
+          twitterUrl="https://x.com/ffelluce"
         />
         <TeamMember
           name="Mertcan YAVUZ"
           title="Developer"
           src="./assets/images/team-lg-10.png"
           linkedinUrl="https://www.linkedin.com/in/mertcnyavuz"
-          email="jane.doe@example.com"
+          email="mertcnyavuz@hotmail.com"
           twitterUrl="https://twitter.com/mertcnyavuz"
         />
         <TeamMember
