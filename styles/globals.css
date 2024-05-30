@@ -11,13 +11,20 @@
 @import url("./assets/owlcarousel/css/owl.carousel.min.css");
 @import url("./assets/owlcarousel/css/owl.theme.default.min.css");
 
-/* Global Styles */
-html, body {
+
+html{
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Arka plan gradyanı */
 }
+
+
+
+
+
 
 #root, #__next {
     width: 100%;
@@ -66,7 +73,7 @@ html, body {
 /* Responsive Container */
 .container {
     width: 100%;
-    max-width: 1200px; /* İsteğe bağlı olarak genişliği sınırlayabilirsiniz */
+    max-width: 1250px; /* İsteğe bağlı olarak genişliği sınırlayabilirsiniz */
     margin: 0 auto; /* Ortalamak için */
     padding: 0 1rem; /* Mobil cihazlarda kenar boşlukları için */
 }
