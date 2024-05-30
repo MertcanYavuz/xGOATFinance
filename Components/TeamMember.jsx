@@ -91,6 +91,7 @@ const TeamMembers = () => {
           padding: '16px',
           marginLeft: '92px',
           justifyContent: 'center', // Mobil cihazlarda merkezi hizalama
+   
         }}
       >
         <TeamMember
