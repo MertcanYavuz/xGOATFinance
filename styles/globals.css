@@ -11,8 +11,117 @@
 @import url("./assets/owlcarousel/css/owl.carousel.min.css");
 @import url("./assets/owlcarousel/css/owl.theme.default.min.css");
 
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 
-/* //  Custom style // */
+#root, #__next {
+    width: 100%;
+}
+
+/* Custom Styles */
+.new_icon_style {
+    display: flex;
+    align-items: center;
+}
+
+.new_fonr_size {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.icon_color {
+    color: #fff;
+}
+
+.counter_time {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.inline_style_1 {
+    left: 30%;
+}
+
+.inline_style_2 {
+    left: 75%;
+}
+
+.new_color {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .new_image_css {
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Responsive Container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* İsteğe bağlı olarak genişliği sınırlayabilirsiniz */
+    margin: 0 auto; /* Ortalamak için */
+    padding: 0 1rem; /* Mobil cihazlarda kenar boşlukları için */
+}
+
+/* Flex Layout */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.service {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .services {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .service {
+        width: 45%;
+    }
+}
+
+
+/*
+
+@import url("./assets/bootstrap/css/bootstrap.min.css");
+@import url("./assets/css/animate.css");
+@import url("./assets/css/cryptocoins.css");
+@import url("./assets/css/font-awesome.min.css");
+@import url("./assets/css/ionicons.min.css");
+@import url("./assets/css/magnific-popup.css");
+@import url("./assets/css/responsive.css");
+@import url("./assets/css/spop.min.css");
+@import url("./assets/css/style.css");
+@import url("./assets/color/theme.css");
+@import url("./assets/owlcarousel/css/owl.carousel.min.css");
+@import url("./assets/owlcarousel/css/owl.theme.default.min.css");
+
+
 .new_icon_style {
     display: flex;
     align-items: center;
@@ -51,3 +160,4 @@
     }
     
 }
+*/
