@@ -81,7 +81,7 @@ const Tier = () => {
               fontWeight: 'bold',
             }}>SEED SALE</div>
             <h4 style={{ fontSize: '30px', color: '#a6dced' }}>TIER 1</h4>
-            <p style={{ color: 'white' }}>Maximum allocation of $4k Minimum allocation of $500 Priced at $0.0070</p>
+            <p style={{ color: 'white' }}>Maximum allocation of $5k Minimum allocation of $500 Priced at $0.0070</p>
           </div>
 
           <div id="tier-2-section" className="grid-item" style={{
