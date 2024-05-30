@@ -76,7 +76,7 @@ main {
 
 @media only screen and (max-width: 600px) {
     .new_image_css {
-        width: 50%;
+        width: 100px;
         height: auto;
     }
 }
@@ -86,7 +86,7 @@ main {
     width: 100%;
     max-width: 1250px; /* İsteğe bağlı olarak genişliği sınırlayabilirsiniz */
     margin: 0 auto; /* Ortalamak için */
-    padding: 0 1rem; /* Mobil cihazlarda kenar boşlukları için */
+    padding:  1rem; /* Mobil cihazlarda kenar boşlukları için */
 }
 
 /* Flex Layout */
