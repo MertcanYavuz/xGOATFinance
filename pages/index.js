@@ -27,6 +27,7 @@ import {
   Telegram,
   CommunityMembers,
   Karalama,
+ 
 } from "../Components/index";
 
 const Index = ({ address, setAddress, connectWallet, transferNativeToken }) => {
@@ -42,6 +43,7 @@ const Index = ({ address, setAddress, connectWallet, transferNativeToken }) => {
       <About />
       <Tier />
       <Distribution />
+      <Karalama />
       <Vercel />
       <Telegram />
       <RoadMap />

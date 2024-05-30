@@ -139,7 +139,7 @@ function ICOComponent() {
                   <p>Your USDT Balance: {utils.formatUnits(usdtTokenBalance, 6)} USDT</p>
           </div>
           <div className={styles.mainContent}>
-          <h1 className={styles.mainContentt}>Token Sale</h1>
+          <h1 className={styles.mainContentt}></h1>
             {!walletConnected ? (
               <button onClick={connectWallet} className={styles.button}>
                 Connect Your Wallet

@@ -10,9 +10,9 @@
   width: 30%;
   display: flex;
   flex-direction: column;
-  transform: translateY(-120px); /* Yukarıya doğru 120 piksel öteler */
+  transform: translateY(-100px); /* Yukarıya doğru 120 piksel öteler */
   color: #fff;
-  margin-left: 100px; /* Soldan 100 piksel ötele */
+  margin-left: 174px; /* Soldan 100 piksel ötele */
 }
 
 .inputGroup {
@@ -77,7 +77,6 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 10px; /* Yukarı ve aşağı 10 piksel boşluk bırak */
-  
 }
 
 .progressBar {
