@@ -27,18 +27,21 @@ const Tier = () => {
           @media (max-width: 768px) {
             .grid-container {
               grid-template-columns: repeat(1, 1fr);
+              gap: 20px;
             }
           }
 
           @media (min-width: 769px) and (max-width: 1024px) {
             .grid-container {
               grid-template-columns: repeat(2, 1fr);
+              gap: 30px;
             }
           }
 
           @media (min-width: 1025px) {
             .grid-container {
               grid-template-columns: repeat(3, 1fr);
+              gap: 50px;
             }
           }
         `}
@@ -47,16 +50,15 @@ const Tier = () => {
         display: 'grid',
         gridTemplateColumns: '1fr',
         gap: '20px',
-        padding: '95px',
+        padding: '20px',
         maxWidth: '1400px',
         margin: 'auto',
       }}>
         <div className="header-box">
-          The waitlist is designed to offer a maximum purchase right of $50 to the first 100 people who apply.
+          {/* Başlık içeriğini buraya ekleyebilirsiniz */}
         </div>
         <div className="grid-container" style={{
           display: 'grid',
-          gap: '50px',
           padding: '20px',
         }}>
           <div id="tier-1-section" className="grid-item" style={{
