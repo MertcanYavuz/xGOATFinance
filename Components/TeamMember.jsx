@@ -9,11 +9,11 @@ const TeamMember = ({ name, title, src, linkedinUrl, email, twitterUrl }) => {
       style={{
         backgroundColor: '#001c3f',
         borderRadius: '58px',
-        padding: '16px',
+        padding: '25px',
         marginBottom: '26px',
-        width: '30%',
+        width: '25%',
         height: '50%',
-        marginRight: '3%',
+        marginRight: '1%',
         textAlign: 'center',
       }}
       onMouseEnter={() => setHover(true)}

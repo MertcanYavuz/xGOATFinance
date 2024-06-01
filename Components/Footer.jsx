@@ -8,26 +8,57 @@ const GlobalStyle = createGlobalStyle`
   /* Footer CSS */
   .footer-links {
     display: flex;
-    gap: 15px; /* Artan ikon aralıkları */
-    justify-content: center; /* Ortalanması için */
-    margin-top: 10px; /* Üst aralık */
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .footer-links a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 5px; /* Kenarlık eklemek için */
+    padding: 5px;
   }
 
   .footer-links a:hover svg,
   .footer-links a:hover img {
-    transform: scale(1.2); /* Hover sırasında ölçeklenir */
+    transform: scale(1.2);
   }
 
   .footer-links svg,
   .footer-links img {
-    transition: transform 0.2s ease-in-out; /* Animasyon eklenir */
+    transition: transform 0.2s ease-in-out;
+  }
+
+  /* Mobil uyum için medya sorguları */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-wrap: wrap;
+    }
+
+    .footer_logo {
+      text-align: center;
+    }
+
+    .footer_link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer_menu {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .footer_menu li {
+      margin: 0 10px;
+    }
+
+    .newsletter_form {
+      text-align: center;
+    }
   }
 `;
 
@@ -38,9 +69,9 @@ const Footer = () => {
 
   return (
     <footer>
-      <GlobalStyle /> {/* Global CSS stilleri */}
+      <GlobalStyle />
       <div
-      id={"contact"}
+        id="contact"
         className="top_footer bg_light_dark"
         data-z-index="1"
         data-parallax="scroll"
@@ -59,7 +90,6 @@ const Footer = () => {
                 </a>
               </div>
 
-              {/* Social Media Links */}
               <div className="footer-links mb-3">
                 <a href="https://www.instagram.com/xgoatfinance/" target="_blank" rel="noopener noreferrer">
                   <FaInstagram size={24} color="#e1306c" />
@@ -73,7 +103,7 @@ const Footer = () => {
                 <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                   <FaGithub size={24} color="#000000" />
                 </a>
-                <a href="https://polygonscan.com/token/" target="_blank">
+                <a href="https://polygonscan.com/token/" target="_blank" rel="noopener noreferrer">
                   <BiPolygon size={24} color="#8247e5" />
                 </a>
                 <a href="https://medium.com/@GoatFinance.net" target="_blank" rel="noopener noreferrer">
@@ -92,7 +122,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Links */}
             <div className="col-lg-3 col-md-6 res_md_mt_30 res_sm_mt_20">
               <h4 className="footer_title border_title animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 Quick Links
@@ -106,8 +135,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Newsletter */}
-            <div class="col-lg-5 col-md-6 res_md_mt_30 res_sm_mt_20">
+            <div className="col-lg-5 col-md-6 res_md_mt_30 res_sm_mt_20">
               <div className="newsletter_form">
                 <h4 className="footer_title border_title animation">
                   Newsletter
@@ -115,8 +143,7 @@ const Footer = () => {
                 <p className="animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                   Monthly digest of what's new and exciting from us.
                 </p>
-              <h4 className="footer_title">Newsletter</h4>
-              <form action="https://api.orneksite.com/subscribe" method="POST">
+                <form action="https://api.orneksite.com/subscribe" method="POST">
                   <input
                     type="text"
                     required
@@ -139,10 +166,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
       <div className="bottom_footer">
         <div className="container">
-          <div class="row">
+          <div className="row">
             <div className="col-md-6">
               <p className="copyright">
                 Copyright &copy; 2024 All Right reserved by @GoatFinance
