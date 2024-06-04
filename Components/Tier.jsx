@@ -81,7 +81,7 @@ const Tier = () => {
               fontWeight: 'bold',
             }}>SEED SALE</div>
             <h4 style={{ fontSize: '30px', color: '#a6dced' }}>TIER 1</h4>
-            <p style={{ color: 'white' }}>Maximum allocation of $5k Minimum allocation of $500 Priced at $0.0070</p>
+            <p style={{ color: 'white' }}>Maximum allocation of $5k Minimum allocation of $500 Priced at $0.0025</p>
           </div>
 
           <div id="tier-2-section" className="grid-item" style={{
@@ -104,7 +104,7 @@ const Tier = () => {
               fontWeight: 'bold',
             }}>PRIVATE SALE</div>
             <h4 style={{ fontSize: '30px', color: '#a6dced' }}>TIER 2</h4>
-            <p style={{ color: 'white' }}>Maximum allocation of $4k Minimum allocation of $500 Priced at $0.0080.</p>
+            <p style={{ color: 'white' }}>Maximum allocation of $4k Minimum allocation of $500 Priced at $0.0027.</p>
           </div>
 
           <div id="tier-3-section" className="grid-item" style={{
@@ -127,7 +127,7 @@ const Tier = () => {
               fontWeight: 'bold',
             }}>PUBLIC SALE</div>
             <h4 style={{ fontSize: '30px', color: '#a6dced' }}>TIER 3</h4>
-            <p style={{ color: 'white' }}>Maximum allocation of $500 Minimum allocation of $250 Priced at $0.0090</p>
+            <p style={{ color: 'white' }}>Maximum allocation of $500 Minimum allocation of $250 Priced at $0.0030</p>
           </div>
         </div>
       </div>
