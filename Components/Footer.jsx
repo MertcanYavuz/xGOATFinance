@@ -143,7 +143,7 @@ const Footer = () => {
                 <p className="animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                   Monthly digest of what's new and exciting from us.
                 </p>
-                <form action="https://api.orneksite.com/subscribe" method="POST">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfx3-0bar3h-2TsZbUba3vUdMJnuQNjZDbOzd3SlHiyZE6cQw/viewform?usp=sf_link" method="POST">
                   <input
                     type="text"
                     required
