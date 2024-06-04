@@ -89,7 +89,6 @@ const TeamMembers = () => {
           display: 'flex',
           flexWrap: 'wrap',
           padding: '16px',
-          marginLeft: '92px',
           justifyContent: 'center',
         }}
       >
@@ -145,23 +144,25 @@ const TeamMembers = () => {
       </div>
       
       <style jsx>{`
-  @media (max-width: 768px) {
-    #team {
-      flex-direction: column;
-      align-items: center;
-    }
-    #team > div {
-      width: 100% !important; // Mobil cihazlarda genişliği ayarlamak için
-      
-    }
-  }
-`}</style>
+        @media (max-width: 768px) {
+          #team {
+            flex-direction: column;
+            align-items: center;
+          }
+          #team > div {
+            width: 90% !important;
+            margin-right: 0 !important;
+            margin-bottom: 16px;
+          }
+        }
+      `}</style>
 
     </>
   );
 };
 
 export default TeamMembers;
+
 
 
 
