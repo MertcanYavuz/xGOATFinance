@@ -12,6 +12,7 @@
 @import url("./assets/owlcarousel/css/owl.theme.default.min.css");
 
 
+
 /* Global Styles */
 html, body {
     margin: 0;
@@ -80,6 +81,12 @@ main {
         height: auto;
     }
 }
+@media only screen and (max-width: 600px) {
+    .banner_image_right {
+        margin-left: -9em; /* İstediğiniz öteleme miktarı */
+    }
+}
+
 
 /* Responsive Container */
 .container {
@@ -122,6 +129,111 @@ main {
         width: 45%;
     }
 }
+
+/* General Styles */
+.section_banner {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.banner_effect {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.banner_text_s2 {
+  max-width: 600px;
+}
+
+.banner_text_s2 h1 {
+  font-size: 2.5em;
+}
+
+.banner_text_s2 h5 {
+  font-size: 1.25em;
+}
+
+.btn_group .btn {
+  margin-right: 10px;
+  margin-bottom: 14px;
+}
+
+.icon_title {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.currency_icon {
+  display: flex;
+  align-items: center;
+}
+
+.banner_image_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_image_right img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 6em;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .section_banner {
+    padding: 20px 0;
+  }
+
+  .banner_text_s2 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .btn_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn_group .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .icon_title {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .banner_image_right {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .banner_image_right img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
 
 
 /*

@@ -151,7 +151,7 @@ const TeamMembers = () => {
       align-items: center;
     }
     #team > div {
-      width: 80% !important; // Mobil cihazlarda genişliği ayarlamak için
+      width: 100% !important; // Mobil cihazlarda genişliği ayarlamak için
       
     }
   }

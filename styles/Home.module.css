@@ -10,7 +10,7 @@
   width: 30%;
   display: flex;
   flex-direction: column;
-  transform: translateY(-100px); /* Yukarıya doğru 120 piksel öteler */
+  transform: translateY(-10px); /* Yukarıya doğru 120 piksel öteler */
   color: #fff;
   margin-left: 174px; /* Soldan 100 piksel ötele */
 }
