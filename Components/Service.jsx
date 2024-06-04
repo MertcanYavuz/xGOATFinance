@@ -42,7 +42,8 @@ const Service = () => {
         <div className="row">
           {services.map((service, i) => (
             <div key={i} className="col-lg-4 col-md-6 col-sm-12">
-              <div className="box_wrap text-center animation" data-animation="fadeInUp" data-animation-delay={`0.${i + 1}s`}>
+              <div className="box_wrap text-center animation" style={{ marginTop: "3rem" }} data-animation="fadeInUp" data-animation-delay={`0.${i + 1}s`}>
+
                 <h4>{service.title}</h4>
                 <p>{service.description}</p>
                 {expanded[i] && <p>{service.moreInfo}</p>}
