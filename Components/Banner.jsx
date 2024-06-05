@@ -46,7 +46,7 @@ const Banner = ({ transferNativeToken }) => {
                   src="assets/images/banner_img2.png"
                   alt=""
                   className="new_image_css"
-                  style={{ width: '100%', height: 'auto', marginTop: '4em' }}
+                  style={{ width: '100%', height: 'auto', marginTop: '2em' }}
                 />
               </div>
             </div>
