@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import { FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa';
 
@@ -135,7 +136,7 @@ const TeamMembers = () => {
           email="jane.doe@example.com"
           twitterUrl="https://twitter.com/example"
         />
-        {/* Diğer TeamMember bileşenlerini de aynı şekilde düzenleyin */}
+    
       </div>
     </>
   );
@@ -145,9 +146,9 @@ const TeamMembers = () => {
 export default TeamMembers;
 
 
+*/
 
 
-/*
 
 import React from 'react';
 import { FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa';
@@ -162,9 +163,7 @@ const TeamMember = ({ name, title, src, linkedinUrl, email, twitterUrl }) => {
         borderRadius: '58px',
         padding: '25px',
         marginBottom: '26px',
-        width: '25%',
-        height: '50%',
-        marginRight: '1%',
+        width: '100%', // Değişiklik
         textAlign: 'center',
       }}
       onMouseEnter={() => setHover(true)}
@@ -238,20 +237,12 @@ const TeamMembers = () => {
         id='team'
         style={{
           display: 'flex',
-          flexWrap: 'wrap',
+          flexDirection: 'column', // Değişiklik
+          alignItems: 'center',    // Değişiklik
           padding: '16px',
-          marginLeft: '92px',
-          justifyContent: 'center',
         }}
       >
-        <TeamMember
-          name="Buğra ÇÖMEZ"
-          title="AI Trading Bot Expert"
-          src="./assets/images/team-lg-5.png"
-          linkedinUrl="https://www.linkedin.com/in/jane-doe"
-          email="jane.doe@example.com"
-          twitterUrl="https://x.com/BugraComez"
-        />
+       
         <TeamMember
           name="Ahmet Sadik GULLU"
           title="CEO"
@@ -268,6 +259,14 @@ const TeamMembers = () => {
           email="mertcnyavuz@hotmail.com"
           twitterUrl="https://twitter.com/mertcnyavuz"
         />
+         <TeamMember
+          name="Buğra ÇÖMEZ"
+          title="AI Trading Bot Expert"
+          src="./assets/images/team-lg-5.png"
+          linkedinUrl="https://www.linkedin.com/in/jane-doe"
+          email="jane.doe@example.com"
+          twitterUrl="https://x.com/BugraComez"
+        />
         <TeamMember
           name="Batuhan AYDIN"
           title="Social Media Manager"
@@ -277,7 +276,7 @@ const TeamMembers = () => {
           twitterUrl="https://twitter.com/example"
         />
         <TeamMember
-          name="Omer Faruk AKCAM"
+          name="Deniz SAHIN"
           title="Technology Lawyer"
           src="./assets/images/team-lg-6.png"
           linkedinUrl="https://www.linkedin.com/in/jane-doe"
@@ -286,34 +285,20 @@ const TeamMembers = () => {
         />
         <TeamMember
           name="Melisa Merve MALKOC"
-          title=""
+          title="Field Operations"
           src="./assets/images/about_img2.png"
           linkedinUrl="https://www.linkedin.com/in/jane-doe"
           email="jane.doe@example.com"
           twitterUrl="https://twitter.com/example"
         />
-      
       </div>
-      
-      <style jsx>{`
-  @media (max-width: 768px) {
-    #team {
-      flex-direction: column;
-      align-items: center;
-    }
-    #team > div {
-      width: 100% !important; // Mobil cihazlarda genişliği ayarlamak için
-      
-    }
-  }
-`}</style>
-
     </>
   );
 };
 
 export default TeamMembers;
-*/
+
+
 
 
 
