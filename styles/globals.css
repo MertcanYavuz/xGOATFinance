@@ -191,13 +191,14 @@ main {
 
 .banner_image_right img {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   height: auto;
   margin-top: 6em;
 }
 
+
 /* Mobile Styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .section_banner {
     padding: 20px 0;
   }
@@ -256,7 +257,7 @@ main {
 }
 
 /* Mobil cihazlar için medya sorgusu */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar-toggler {
     display: none;
   }
@@ -328,3 +329,4 @@ main {
     
 }
 */
+
