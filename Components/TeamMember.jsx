@@ -163,7 +163,7 @@ const TeamMember = ({ name, title, src, linkedinUrl, email, twitterUrl }) => {
         borderRadius: '58px',
         padding: '25px',
         marginBottom: '26px',
-        width: '100%', // Değişiklik
+        width: '60%', // Değişiklik
         textAlign: 'center',
       }}
       onMouseEnter={() => setHover(true)}
