@@ -238,6 +238,39 @@ main {
     margin-top: -11rem;
   }
   
+/* Header.module.css button gizleme mobil  */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+/* Genel stiller */
+.header_wrap {
+  /* Diğer stil kuralları */
+}
+
+
+.darkBackground {
+  background-color: #000; /* Koyu arka plan rengi */
+}
+
+/* Mobil cihazlar için medya sorgusu */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-brand {
+    flex: 1;
+    text-align: left;
+    margin-top: -0.3rem;
+  }
+
+  .logo_light, .logo_dark {
+    width: 250px; /* Logo boyutunu artır */
+  }
+}
 
 
 /*
